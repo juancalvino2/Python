@@ -1,0 +1,14 @@
+bisiesto = lambda año: ((año % 4 == 0 and año % 100 != 0) or año % 400 == 0)
+
+while True:
+    try:
+        año = int(input("Dime un año: "))
+        break
+    except ValueError:
+        print("El año tiene que ser un número entero")
+        continue
+
+if bisiesto(año):
+    print(año, "es bisiesto")
+else:
+    print(año, "no es bisiesto")
