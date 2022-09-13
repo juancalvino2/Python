@@ -15,7 +15,7 @@ while True:
         altura = float(input("Introduzca su altura en metros, por ejemplo: 1.80: "))
         break
     except ValueError:
-        print("Su altura tiene que estar expresada en metros")
+        print("Su altura debe estar expresada en metros")
 
 imc = int(peso) / float(altura) ** 2
 imc_con_dos_decimales = round(imc, 2)
